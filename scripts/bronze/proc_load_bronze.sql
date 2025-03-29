@@ -29,6 +29,16 @@ Use Case			 |	Small datasets, selective inserts	|  Large datasets, fast bulk loa
 File Support		 |	No									|  Yes
 Error Handling		 |	More control						|  Less control
 
+BULK INSERT employees
+FROM 'C:\data\employees.csv'
+WITH (
+    FORMAT='CSV',
+    FIRSTROW=2,  --> Skip header row
+    FIELDTERMINATOR=',', --> Defines column separators (comma in CSV files).
+    ROWTERMINATOR='\n' --> Ensures that each row ends correctly. If you are on Windows, use '\r\n' instead.
+	TABLOCK --> Speeds up the process by locking the table for bulk operations. (Optional)
+);
+
 */
 
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS
