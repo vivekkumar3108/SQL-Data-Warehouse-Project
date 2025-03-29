@@ -14,6 +14,21 @@ Usage:
 ===============================================================================
 */
 
+/*
+								View vs Table in SQL
+Feature				 |  Table											|		View
+----------------------------------------------------------------------------------------------------------------------------
+Definition			 |  A physical storage of data						|		A virtual table (stored query result)
+Storage				 |  Data is physically stored in the database		|		No data stored, it fetches data dynamically
+Data Modification	 |  Supports INSERT, UPDATE, DELETE					|		UPDATE possible (but depends on complexity)
+Performance			 |  Fast for frequent queries as data is stored		|		Slower because data is fetched dynamically
+Indexing			 |  Can have indexes for better performance			|		Can’t have indexes directly (unless indexed view)
+Usage				 |  Stores raw data permanently						|		Used for data abstraction & security
+Dependencies		 |  Independent, contains its own data				|		Dependent on underlying tables
+
+*/
+
+
 -- =============================================================================
 -- Create Dimension: gold.dim_customers
 -- =============================================================================
