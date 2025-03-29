@@ -16,6 +16,21 @@ Usage Example:
     EXEC bronze.load_bronze;
 ===============================================================================
 */
+
+/*
+							INSERT v/s BULK INSERT
+
+Feature				 |	INSERT								|  BULK INSERT
+---------------------------------------------------------------------------------------------
+Inserts From		 |	Values, Select Query				|  External File (CSV, TXT)
+Speed				 |	Slower for large data				|  Faster for large data
+Transaction Support	 |	Yes									|  No
+Use Case			 |	Small datasets, selective inserts	|  Large datasets, fast bulk loading
+File Support		 |	No									|  Yes
+Error Handling		 |	More control						|  Less control
+
+*/
+
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS
 BEGIN
 	DECLARE @start_time DATETIME, @end_time DATETIME, @batch_start_time DATETIME, @batch_end_time DATETIME; 
