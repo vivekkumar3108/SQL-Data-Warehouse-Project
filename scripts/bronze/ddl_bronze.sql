@@ -9,6 +9,14 @@ Script Purpose:
 ===============================================================================
 */
 
+/*
+OBJECT_ID('bronze.crm_cust_info', 'U') -> OBJECT_ID is a built-in SQL Server function that returns the ID of an object (like a table, view, or procedure).
+'U' specifies that we are looking for a User Table.
+*/
+
+
+--BRONZE LAYER EXTRACTION FROM SOURCE CRM
+
 IF OBJECT_ID('bronze.crm_cust_info', 'U') IS NOT NULL
     DROP TABLE bronze.crm_cust_info;
 GO
@@ -56,6 +64,8 @@ CREATE TABLE bronze.crm_sales_details (
 );
 GO
 
+--BRONZE LAYER EXTRACTION FROM SOURCE ERP
+
 IF OBJECT_ID('bronze.erp_loc_a101', 'U') IS NOT NULL
     DROP TABLE bronze.erp_loc_a101;
 GO
@@ -72,7 +82,7 @@ GO
 
 CREATE TABLE bronze.erp_cust_az12 (
     cid    NVARCHAR(50),
-    bdate  DATE,
+    bdate  DATE, --We can use DATETIME as well
     gen    NVARCHAR(50)
 );
 GO
@@ -88,3 +98,4 @@ CREATE TABLE bronze.erp_px_cat_g1v2 (
     maintenance  NVARCHAR(50)
 );
 GO
+
