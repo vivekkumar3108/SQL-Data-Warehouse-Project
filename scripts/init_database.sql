@@ -63,3 +63,15 @@ GO
 
 CREATE SCHEMA gold;
 GO
+
+/*
+Feature				|	Database									|	Schema
+____________________|_______________________________________________|______________________________________________
+Definition			|	A collection of structured data				|	A logical grouping of database objects
+Contains			|	Schemas, tables, views, indexes, procedures	|	Tables, views, indexes, procedures
+Storage Allocation	|	Yes, requires physical storage				|	No, depends on the database
+Ownership			|	Can have multiple owners (admins)			|	Typically owned by a user or role
+Access Control		|	Managed at the database level				|	Can have different permissions per schema
+Multi-Tenancy		|	Requires separate databases					|	Easier using multiple schemas
+Example				|	CREATE DATABASE SalesDB;					|	CREATE SCHEMA HR;
+*/
