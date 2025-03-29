@@ -13,8 +13,31 @@ WARNING:
     and ensure you have proper backups before running this script.
 */
 
+
 USE master;
 GO
+
+/*
+
+Usage of GO in SQL Server
+
+1. Separating Batches of Statements:
+
+SELECT 'Batch 1';
+GO
+SELECT 'Batch 2';
+GO
+Here, the first SELECT statement runs separately from the second one because of the GO command.
+
+2. Executing a Batch Multiple Times:
+
+
+PRINT 'Hello, World!';
+GO 3
+This will print 'Hello, World!' three times, as GO 3 repeats the batch three times.
+
+*/
+
 
 -- Drop and recreate the 'DataWarehouse' database
 IF EXISTS (SELECT 1 FROM sys.databases WHERE name = 'DataWarehouse')
