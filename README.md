@@ -34,7 +34,7 @@ This project involves:
 
 ---
 
-##🚀 Project Setup & Tools
+## 🚀 Project Setup & Tools
 
 This project utilizes the following tools and technologies to build a scalable Data Warehouse:
 
@@ -68,7 +68,7 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 
 ---
 
-### BI: Analytics & Reporting (Data Analysis)
+### 🚀 BI: Analytics & Reporting (Data Analysis)
 
 #### Objective
 Develop SQL-based analytics to deliver detailed insights into:
