@@ -11,6 +11,9 @@ Script Purpose:
 
 Usage:
     - These views can be queried directly for analytics and reporting.
+	SELECT * FROM gold.dim_customers;
+	SELECT * FROM gold.dim_products;
+	SELECT * FROM gold.fact_Sales;
 ===============================================================================
 */
 
