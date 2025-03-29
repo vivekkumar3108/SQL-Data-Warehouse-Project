@@ -3,6 +3,9 @@
 Welcome to the **Data Warehouse and Analytics Project** repository! 🚀  
 This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
 
+**This project was built by following the [SQL Data Warehouse From Scratch](https://youtu.be/9GVqKuTVANE?si=IStT23Ju-97S5EPT) by [DataWithBaraa](https://www.youtube.com/@DataWithBaraa).
+Big thanks to Mr. Baraa for the amazing content! 🚀**
+
 ---
 ## 🏗️ Data Architecture
 
