@@ -6,7 +6,7 @@ This project demonstrates a comprehensive data warehousing and analytics solutio
 **This project was built by following the [SQL Data Warehouse From Scratch](https://youtu.be/9GVqKuTVANE?si=IStT23Ju-97S5EPT) by [DataWithBaraa](https://www.youtube.com/@DataWithBaraa).
 Big thanks to Mr. Baraa for the amazing content! 🚀**
 
-Notion Project RoadMap :- https://www.notion.so/SQL-Data-Warehouse-Project-1c5d0241c777804fbb3ee4897698d086?pvs=4
+#### [Notion Project RoadMap](https://www.notion.so/SQL-Data-Warehouse-Project-1c5d0241c777804fbb3ee4897698d086?pvs=4)
 ---
 ## 🏗️ Data Architecture
 
